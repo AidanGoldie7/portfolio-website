@@ -101,3 +101,21 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff0000;
 }
+
+
+
+/*=======================================*/
+/*===============ABOUT SECTION===========*/
+/*=======================================*/
+/* its a # when referencing a div id and a . when referencing a div class*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+/*making image and the contents of about section side by side instead of vertical*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
