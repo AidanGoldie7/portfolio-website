@@ -45,6 +45,18 @@ nav{
     flex-wrap: wrap;
 }
 
+/*nav bar title*/
+nav a{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+/*colour of the contents inside span of title 'AIDAN' - changes 'D' to red*/
+nav a span{
+    color: #ff0000;
+}
+
 /*set size of logo*/
 .logo{
     width: 140px;
@@ -61,7 +73,8 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 300;
     position: relative;
 }
 
@@ -85,6 +98,11 @@ nav ul li a:hover::after{
 
 
 
+
+
+
+
+
 /*=======================================*/
 /*===============Main Text===============*/
 /*=======================================*/
@@ -101,6 +119,11 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff0000;
 }
+
+
+
+
+
 
 
 
@@ -193,3 +216,63 @@ nav ul li a:hover::after{
  .tab-contents.active-tab{
     display: block;
  }
+
+
+
+
+
+/*=======================================*/
+/*===============SERVICES SECTIOn========*/
+/*=======================================*/
+/*give a bit of space between about section and this new title 'My Services'*/
+#services{
+    padding: 30px 0;
+}
+
+/*Create grid for the services display*/
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/*add border round the services in grid*/
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+/*icon sizing*/
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/*titles*/
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/*learn more line*/
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/*when mouse hovers over a block*/
+.services-list div:hover{
+    background: #921313;
+    transform: translateY(-10px);
+}
+
+

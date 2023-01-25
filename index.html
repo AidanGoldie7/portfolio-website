@@ -19,12 +19,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;900&family=Mukta:wght@200;400&display=swap" rel="stylesheet">
 
+
+        <!--FontAwesome Icon Code-->
+        <script src="https://kit.fontawesome.com/e49a2e2c48.js" crossorigin="anonymous"></script>
     </head>
+
+
     <body>
         <div id="header">
             <div class="container">
+                <!--nav bar-->
                 <nav>
-                    <img src="images/logo.PNG" class="logo">
+                    <a href="#">AI<span>D</span>AN.</a>
+                    <!--If you want a picture logo instead of text in your nav bar-->
+                    <!--<img src="images/logo.PNG" class="logo">-->
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -39,6 +47,9 @@
                 </div>
             </div>
         </div>
+
+
+
 
         <!--ABOUT SECTION-->
         <div id="about">
@@ -87,12 +98,43 @@
             </div>
        </div> 
 
+       <!--SERVICES SECTION-->
+       <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>web design description</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button">  </i>
+                    <i class="fa-brands fa-apple"></i>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Development</h2>
+                    <p>mobile description</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>Hello Hello</h2>
+                    <p>hello description</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+       </div>
+
+
+
        <!-- script used to open the tabs in about section-->
        <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
         
-        
+
         //function to open tab
         function opentab(tabname){
             for(tablink of tablinks){
@@ -108,5 +150,8 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
        </script>
+    <!--end of about section -->
+
+
     </body>
 </html>
