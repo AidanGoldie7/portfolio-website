@@ -120,6 +120,11 @@ nav ul li a:hover::after{
     color: #ff0000;
 }
 
+.header-text h2{
+    margin-bottom: 40%;
+    font-weight: 200;
+}
+
 
 
 
