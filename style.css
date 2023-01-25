@@ -152,8 +152,8 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     /*rounded corners on the image -
-    500px will make the image completely round*/
-    border-radius: 500px;
+    50% will make the image completely round*/
+    border-radius: 50%;
 }
 
 
@@ -276,3 +276,77 @@ nav ul li a:hover::after{
 }
 
 
+
+
+
+
+
+/*=======================================*/
+/*============PORTFOLIO SECTION==========*/
+/*=======================================*/
+
+/*seperating title from the my services section*/
+#portfolio{
+    padding: 50px 0;
+}
+
+/* create grid*/ 
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/*set borders - the radius makes it curved at corners*/
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*put images into the grid*/
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/*adding the layer over the image with information and text*/
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ababab);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*title design*/
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/*design for link*/
+.layer a{
+    margin-top: 20px;
+    color: #ababab;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    text-align: center;
+}
