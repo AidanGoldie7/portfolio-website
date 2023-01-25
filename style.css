@@ -305,17 +305,20 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 
-/*put images into the grid*/
+/*put images into the grid
+the transform section came later and lets the image be slightly zoomed in when hovered over*/
 .work img{
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: transform 0.5s;
 }
 
-/*adding the layer over the image with information and text*/
+/*adding the layer over the image with information and text
+the transition line came later and gives the rising effect of the info section*/
 .layer{
     width: 100%;
-    height: 100%;
+    height: 0%;
     background: linear-gradient(rgba(0,0,0,0.6), #ababab);
     border-radius: 10px;
     position: absolute;
@@ -329,6 +332,7 @@ nav ul li a:hover::after{
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
+    transition: height 0.5s;
 }
 
 /*title design*/
@@ -349,4 +353,14 @@ nav ul li a:hover::after{
     height: 60px;
     border-radius: 20%;
     text-align: center;
+}
+
+/*when mouse hovers over one of the images*/
+.work:hover img{
+    transform: scale(1.1);
+}
+
+/*increasing height of information section to 100% so it can be seen*/
+.work:hover .layer{
+    height: 100%;
 }
