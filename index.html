@@ -51,9 +51,62 @@
                     <!--Column 2 for about section-->
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
+                        <p>About me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me </p>
+
+                        <!--onclick events for each tab / with tab titles-->
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <!--contents of each tab, the id should be same as the onclick opentab() above-->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Software Engineer</span><br>Specialising in web development and applications</li>
+                                <li><span>Web Developer</span><br>Specialising in web development and applications</li>
+                                <li><span>Mobile Application Development</span><br>Specialising in web development and applications</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>None</span><br>none available</li>
+                                <li><span>none</span><br>none available</li>
+                                <li><span>none</span><br>none</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Douglas Academy</span><br>Specialising in web development and applications</li>
+                                <li><span>City of Glasgow College</span><br>Specialising in web development and applications</li>
+                                <li><span>Edinburgh Naier University</span><br>Specialising in web development and applications</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
        </div> 
+
+       <!-- script used to open the tabs in about section-->
+       <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        
+        //function to open tab
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+
+            //add underline to whatever tab you click 
+            event.currentTarget.classList.add("active-link");
+            //add the correct tab contents to the clicked tabname (this is why the id needs to be the same name as the onclick opentab())
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       </script>
     </body>
 </html>
