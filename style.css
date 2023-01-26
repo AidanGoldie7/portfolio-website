@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #000000;
     color: rgb(255, 255, 255);
@@ -456,6 +460,7 @@ the transition is calling transform from the hover code*/
     width: 100%;
 }
 
+/*input form*/
 form input, form textarea{
     width: 100%;
     border: 0;
@@ -467,6 +472,7 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
+
 
 form btn2{
     padding: 14px 60px;
@@ -510,3 +516,92 @@ form btn2{
 /*=======================================*/
 /*============CSS SMALL SCREEN===========*/
 /*=======================================*/
+/*make sure menu burger is hidden from all pages
+we will add it in where needed*/
+nav .fa-solid{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phonebackground.PNG);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    /*add side nav bar for smaller screens*/
+    nav ul{
+        background: #ff0000;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 120vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    /*side nav bar organised*/
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+
+    /*ABOUT ME SECTION*/
+    .sub-title{
+        font-size: 40px;
+    }
+
+    /*change size of photo*/ 
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    /*create some space below image*/
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    /*set new font size*/
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    /*fix margin for about section*/
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+
+    /*fix contact me section spacing*/
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+}
