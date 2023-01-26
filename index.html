@@ -39,6 +39,7 @@
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <a href="images/Aidan Goldie CV.pdf" download class="btn btn2">Download CV</a>
                         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -48,6 +49,10 @@
                     <p>Softwar Engineer</p>
                     <h1>Hi, I'm <span>Aidan</span></h1>
                     <h2>Welcome to my digital portfolio</h2>
+                    <div class="social-icons2">
+                    <a href="https://www.linkedin.com/in/aidan-goldie-88414523a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AidanGoldie7"><i class="fa-brands fa-github"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -193,12 +198,13 @@
                         <a href="images/Aidan Goldie CV.pdf" download class="btn btn2">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <form>
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="Submit" class="btn btn2">Submit</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
@@ -257,5 +263,25 @@
         </script>
 
 
+
+        <!--script to send message to google sheets-->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwkeLr0KmpL0qllriteRlIqetAkSdUIuFzdm4QPxqocoRYSdPAD139mv2vgIU8B2s6U/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+  
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Message sent, thanks for getting in touch!"
+                        setTimeout(function(){
+                            msg.innerHTML = ""
+                        },3000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
     </body>
 </html>
