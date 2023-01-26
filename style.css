@@ -385,3 +385,63 @@ the transition line came later and gives the rising effect of the info section*/
 .btn:hover{
     background: #ababab;
 }
+
+
+
+
+
+
+
+
+/*=======================================*/
+/*============CONTACT SECTION============*/
+/*=======================================*/
+/*make left side only take up 35% of width of the form*/
+.contact-left{
+    flex-basis: 35%;
+}
+
+/*make right side take up 60% of width of the form, leaving 5% between them*/
+.contact-right{
+    flex-basis: 60%;
+}
+
+/*spacing on left side text items*/
+.contact-left p{
+    margin-top: 30px;
+}
+
+/*color and spacing of icons for email and phone number*/
+.contact-left p i{
+    color: rgb(255, 18, 18);
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+/*spacing for socials icons*/
+.social-icons{
+    margin-top: 30px;
+}
+
+/*change size and color of socials icons
+the transition is calling transform from the hover code*/
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+/*makes icon highlighed and shift up when mouse is hovered over it*/
+.social-icons a:hover{
+    color: #921313;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #921313;
+    border-color: #000000;
+}
