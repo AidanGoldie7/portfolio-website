@@ -131,11 +131,12 @@ nav ul li a:hover::after{
 
 .header-text h1{
     margin-top: 20px;
-    font-size: 60px;
+    font-size: 100px;
+    font-weight: 600;
 }
 
 .header-text h1 span{
-    color: #ff0000;
+    color: #a01f1f;
 }
 
 .header-text h2{
@@ -143,9 +144,14 @@ nav ul li a:hover::after{
     font-weight: 200;
 }
 
+.header-text h3{
+    margin-bottom: 1%;
+    font-weight: 100;
+}
+
 /*spacing for socials icons*/
 .social-icons2{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 /*change size and color of socials icons
@@ -161,8 +167,17 @@ the transition is calling transform from the hover code*/
 
 /*makes icon highlighed and shift up when mouse is hovered over it*/
 .social-icons2 a:hover{
-    color: #135592;
+    color: #921313;
     transform: translateY(-5px);
+}
+
+/*line in main text*/
+hr{
+    margin-top: 10px;
+    width: 51%;
+    font-style: italic;
+    margin-bottom: 10px;
+    opacity: 20%;
 }
 
 
@@ -501,6 +516,11 @@ the transition line came later and gives the rising effect of the info section*/
     background: #ababab;
 }
 
+.work p i{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
 
 
 
@@ -570,7 +590,7 @@ the transition line came later and gives the rising effect of the info section*/
     font-size: 10px;
     line-height: 30px;
     text-align: center;
-    background: rgba(226, 0, 0, 0.72);
+    background: rgba(56, 56, 56, 0.72);
     border-radius: 6px;
   }
   .contact-left p a i:hover {
@@ -595,7 +615,7 @@ the transition line came later and gives the rising effect of the info section*/
   }
   
   .contact-left p a {
-    color: rgba(13, 157, 219, 0.55);
+    color: rgba(172, 27, 27, 0.55);
     font-weight: 500;
     text-decoration: none;
   }
