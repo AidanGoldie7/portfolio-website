@@ -71,36 +71,102 @@
                     <!--Column 2 for about section-->
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p>About me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me </p>
+                        <p>A self-driven and motivated Graduate Software Engineer who works efficaciously in dynamic environments. An 
+                            excellent and effective communicator on all levels, who is a team player with a natural attention to detail and 
+                            accuracy. A passionate and fast learner skilled in Python (Django), Java, C# and JavaScript.</p>
+                        <p>ss </p> 
+                        <p>My objective is to expand on my current skillset through learning the infrastructure and workflow in which tech 
+                            companies utilize in order to maximize productivity, minimize system downtime and ensure that customer 
+                            satisfaction is of the highest regard. </p>
 
                         <!--onclick events for each tab / with tab titles-->
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('languages')">Languages & Tools</p>
+                            <p class="tab-links" onclick="opentab('education')">Education & Certifications</p>
                         </div>
+                        
 
                         <!--contents of each tab, the id should be same as the onclick opentab() above-->
                         <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Software Engineer</span><br>Specialising in web development and applications</li>
-                                <li><span>Web Developer</span><br>Specialising in web development and applications</li>
-                                <li><span>Mobile Application Development</span><br>Specialising in web development and applications</li>
-                            </ul>
+                            <div class="columns-skills">
+                                <div class="skills-col-1">
+                                    <ul>
+                                        <li><span>Hard Skills</span><br>
+                                        <i class="fa-solid fa-arrow-pointer"></i> Web Development <br>
+                                        <i class="fa-solid fa-mobile-screen-button"></i> Mobile Application Development <br>
+                                        <i class="fa-solid fa-bug"></i> Debugging <br>
+                                        <i class="fa-solid fa-database"></i> Database Knowledge <br>
+                                        <i class="fa-solid fa-code-branch"></i> Version Control
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="skills-col-2">
+                                    <ul>
+                                        <li><span>Soft Skills</span><br>
+                                        <i class="fa-solid fa-comment"></i> Communication <br>
+                                        <i class="fa-solid fa-people-group"></i> Collaboration <br>
+                                        <i class="fa-solid fa-brain"></i> Critical Thinking <br>
+                                        <i class="fa-solid fa-question"></i> Problem Solving <br>
+                                        <i class="fa-solid fa-diagram-project"></i> Networking
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>None</span><br>none available</li>
-                                <li><span>none</span><br>none available</li>
-                                <li><span>none</span><br>none</li>
-                            </ul>
+                        
+
+
+                        <div class="tab-contents" id="languages">
+                            <div class="columns-languages">
+                                <div class="languages-col-1">
+                                    <ul>
+                                        <li><span>Languages</span><br>
+                                            <i class="fa-brands fa-python"></i> Python (Django) <br>
+                                            <i class="fa-brands fa-java"></i> Java <br> 
+                                            <i class="fa-solid fa-align-justify"></i> C# <br> 
+                                            <i class="fa-brands fa-square-js"></i> JavaScript <br> 
+                                            <i class="fa-brands fa-html5"></i> HTML/CSS <br> 
+                                            <i class="fa-solid fa-align-justify"></i> MySQL <br> 
+                                        </li>
+                                    </ul>
+                                </div>
+                            <div class="languages-col-2">
+                                <ul>
+                                    <li><span>Tools</span> <br>
+                                    <i class="fa-brands fa-github"></i> GitHub <br>
+                                    <i class="fa-solid fa-fire"></i> Firebase
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                        </div>
+
+
+
+                        
                         <div class="tab-contents" id="education">
+                            <div class="columns-education">
+                                <div class="education-col-1">
+                                    <ul>
+                                        <li><span>Education</span><br>
+                                            <i class="fa-solid fa-book-open"></i> Douglas Academy: 2011 - 2017 <br>
+                                            | <br>
+                                            <i class="fa-solid fa-building-columns"></i> City of Glasgow College: 2017 - 2018 <br>
+                                            | <br>
+                                            <i class="fa-solid fa-graduation-cap"></i> Edinburgh Napier University: 2018 - 2022
+                                        </li>
+                                    </ul>
+                                </div>
+
+                        <div class="education-col-2">
                             <ul>
-                                <li><span>Douglas Academy</span><br>Specialising in web development and applications</li>
-                                <li><span>City of Glasgow College</span><br>Specialising in web development and applications</li>
-                                <li><span>Edinburgh Naier University</span><br>Specialising in web development and applications</li>
+                                <li><span>Certification</span><br>
+                                <i class="fa-solid fa-ban"></i> None at this time <br>
+                                </li>
                             </ul>
+                        </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -183,14 +249,19 @@
 
 
 
-        <!--CONTACT SECTION-->
+        <!--CONTACT SECTION   -->
         <div id="contact">
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
                         <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i>aidangoldie7@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>07814866269</p>
+
+
+                        <p onclick="copy(this)"><i class="fa-solid fa-paper-plane"></i>aidangoldie7@gmail.com<a class="copy"><i class="fa-regular fa-copy"><span></span></i></a></p>
+                        <p onclick="copy(this)"><i class="fa-solid fa-phone"></i>07814866269<a class="copy"><i class="fa-regular fa-copy"></i></a></p>
+
+
+
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/aidan-goldie-88414523a/"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/AidanGoldie7"><i class="fa-brands fa-github"></i></a>
@@ -248,6 +319,7 @@
 
 
 
+
         <!--Script to open and close the side menu on smaller screen-->
         <script>
 
@@ -261,6 +333,8 @@
             }
 
         </script>
+
+
 
 
 
@@ -282,6 +356,22 @@
                     })
                     .catch(error => console.error('Error!', error.message))
             })
+        </script>
+
+
+
+
+
+        <!--clicking the email or phone number will copy to clipboard-->
+        <script>
+            function copy(that){
+                var inp =document.createElement('input');
+                document.body.appendChild(inp)
+                inp.value =that.textContent
+                inp.select();
+                document.execCommand('copy',false);
+                inp.remove();
+                }
         </script>
     </body>
 </html>

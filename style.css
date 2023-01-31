@@ -250,17 +250,90 @@ the transition is calling transform from the hover code*/
 }
 
 .tab-contents ul li span{
-    color: #921313;
-    font-size: 16px;
+    color: #921c1c;
+    font-size: 18px;
 }
 
- .tab-contents{
+.tab-contents{
     display: none;
- }
+}
 
- .tab-contents.active-tab{
+.tab-contents.active-tab{
     display: block;
- }
+}
+
+
+/*SKILLS SECTION*/
+#skills i {
+    color:rgb(204, 204, 204);
+    font-size: 20px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+}
+/*Separating hard skills and soft skills into two columns*/ 
+.columns-skills{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills-col-1{
+    flex-basis: 35%;
+
+}
+.skills-col-2{
+    flex-basis: 65%;
+}
+
+
+
+
+/*LANGUAGES SECTION*/
+#languages i{
+    color:rgb(204, 204, 204);
+    font-size: 20px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+}
+
+/*Separating laguanges and tools into two columns*/ 
+.columns-languages{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.languages-col-1{
+    flex-basis: 35%;
+
+}
+.languages-col-2{
+    flex-basis: 65%;
+}
+
+
+
+/*education SECTION*/
+#education i{
+    color:rgb(204, 204, 204);
+    font-size: 20px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+}
+
+/*Separating education and certificates into two columns*/ 
+.columns-education{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.education-col-1{
+    flex-basis: 50%;
+
+}
+.education-col-2{
+    flex-basis: 50%;
+}
+
+
 
 
 
@@ -453,11 +526,100 @@ the transition line came later and gives the rising effect of the info section*/
     margin-top: 30px;
 }
 
+
+/*copy email and phone number*/
+.contact-left p a i{
+    color: #b4b4b4;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-left: 2.5px;
+    margin-bottom: 12.5px;
+    cursor: pointer;
+
+    position: relative;
+    display: inline-block;
+    transform: translateY(-50%);
+
+
+}
+
+
+  
+/*TRYING TO FIGURE OUT HOW TO GET TOOL TIP FOR COPY TO CLIPBOARD*/
+/*----------------------------------------------*/
+.contact-left p a i:before {
+    position: absolute;
+    z-index: 9998;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 0px solid rgba(253, 253, 253, 0.72);
+  }
+
+  .contact-left p a i:after {
+    content: "Copy to Clipboard";
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: -10px;
+    left: 30px;
+    width: 130px;
+    height: 30px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(226, 0, 0, 0.72);
+    border-radius: 6px;
+  }
+  .contact-left p a i:hover {
+    background-color: #eee;
+  }
+  .contact-left p a i:hover:before, .contact-left p a i:hover:after {
+    display: block;
+  }
+  .contact-left p a i:active, .contact-left p a i:focus {
+    outline: none;
+  }
+  .contact-left p a i:active:after, .contact-left p a i:focus:after {
+    content: "Copied!";
+  }
+  
+  .contact-left p a span{
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    color: rgba(0, 0, 0, 0.07);
+    font-size: 3px;
+  }
+  
+  .contact-left p a {
+    color: rgba(13, 157, 219, 0.55);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .contact-left p a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+  
+
+/*----------------------------------------------*/
+
+
+
+
 /*color and spacing of icons for email and phone number*/
 .contact-left p i{
     color: rgb(255, 18, 18);
     margin-right: 15px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /*spacing for socials icons*/
