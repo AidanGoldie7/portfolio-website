@@ -8,6 +8,7 @@
         <title>Aidan Goldie</title>
         
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
         <!--Box icons-->
@@ -70,12 +71,13 @@
             <div class="container">
                 <div class="row">
                     <!--Column 1 for about section-->
-                    <div class="about-col-1">
+                    <div class="about-col-1" data-aos="zoom-in" data-aos-delay="50">
                         <img src="images/Graduation profile pic.PNG">
                     </div>
                     <!--Column 2 for about section-->
                     <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
+                        <h1 class="sub-title" data-aos="fade-left" data-aos-delay="250" data-aos-duration="500"><span>About</span> Me</h1>
+                        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
                         <p>A self-driven and motivated Graduate Software Engineer who works efficaciously in dynamic environments. An 
                             excellent and effective communicator on all levels, who is a team player with a natural attention to detail and 
                             accuracy. A passionate and fast learner skilled in Python (Django), Java, C# and JavaScript.</p>
@@ -177,6 +179,8 @@
                 </div>
             </div>
        </div> 
+       </div>
+
 
 
 
@@ -186,8 +190,8 @@
        <!--SERVICES SECTION-->
         <div id="services">
             <div class="container">
-                <h1 class="sub-title">My Socials</h1>
-                <div class="services-list">
+                <h1 class="sub-title" data-aos="fade-left" data-aos-delay="50">My <span>Socials</span></h1>
+                <div class="services-list" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
                     <div>
                         <i class="fa-solid fa-code"></i>
                         <h2>Web Design</h2>
@@ -213,8 +217,8 @@
        <!--Portfolio section-->
        <div id="portfolio">
             <div class="container">
-                <h1 class="sub-title">My Portfolio</h1>
-                <div class="work-list">
+                <h1 class="sub-title" data-aos="fade-left" data-aos-delay="50">My <span>Portfolio</span></h1>
+                <div class="work-list" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
                     <div class="work">
                         <img src="images/pomodoro.jpg" alt="">
                         <div class="layer">
@@ -249,7 +253,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/AidanGoldie7" class="btn">See More</a>
+                <a href="https://github.com/AidanGoldie7" class="btn" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="500">See More</a>
             </div>
        </div>
        <br><br><br><br><br><br><br>
@@ -261,11 +265,11 @@
         <!--CONTACT SECTION   -->
         <div id="contact">
             <div class="container">
-                <div>
-                    <h1 class="sub-title">Contact Me</h1>
+                <div class="title">
+                    <h1 class="sub-title" data-aos="fade-left" data-aos-delay="50"><span>Contact</span> Me</h1>
                 </div>
                 <div class="row">
-                    <div class="contact-left">
+                    <div class="contact-left" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
                         
 
                         <p onclick="copy(this)"><i class="fa-solid fa-paper-plane"></i>aidangoldie7@gmail.com<a class="copy"><i class="fa-regular fa-copy"><span></span></i></a></p>
@@ -273,7 +277,7 @@
 
 
 
-                        <div class="social-icons">
+                        <div class="social-icons" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
                             <a href="https://www.linkedin.com/in/aidan-goldie-88414523a/"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/AidanGoldie7"><i class="fa-brands fa-github"></i></a>
                             <a href="images/Aidan Goldie CV.pdf" download class="btn3"> <i class="fa-solid fa-download"></i>CV</a>
@@ -281,10 +285,10 @@
                     </div>
                     <div class="contact-right">
                         <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="Submit" class="btn btn2">Submit</button>
+                            <input type="text" name="Name" placeholder="Your Name" required data-aos="fade-left" data-aos-delay="250" data-aos-duration="500">
+                            <input type="email" name="Email" placeholder="Your Email" required data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                            <textarea name="Message" rows="6" placeholder="Your Message" data-aos="fade-left" data-aos-delay="750" data-aos-duration="500"></textarea>
+                            <button type="Submit" class="btn btn2" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="500">Submit</button>
                         </form>
                         <span id="msg"></span>
                     </div>
@@ -383,6 +387,13 @@
                 document.execCommand('copy',false);
                 inp.remove();
                 }
+        </script>
+
+
+        <!--Script for animations-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
         </script>
     </body>
 </html>

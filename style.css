@@ -15,6 +15,8 @@ html{
 body{
     background: #000000;
     color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 10000;
 }
 
 
@@ -141,7 +143,28 @@ nav ul li a:hover::after{
     margin-top: 20px;
     font-size: 100px;
     font-weight: 600;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 50; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 2.5s steps(30) 1s 1 normal both,
+      blink-caret .75s steps(30) infinite;
 }
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 51% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    40% { border-color: rgb(255, 255, 255); }
+  }
+
 
 .header-text h1 span{
     color: #921313;
@@ -159,7 +182,8 @@ nav ul li a:hover::after{
 
 /*spacing for socials icons*/
 .social-icons2{
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-left: 5px;
 }
 
 /*change size and color of socials icons
@@ -211,7 +235,7 @@ hr{
 /*=======================================*/
 /* its a # when referencing a div id and a . when referencing a div class*/
 #about{
-    padding: 80px 0;
+    
     color: #ababab;
     padding-top: 150px;
 }
@@ -222,6 +246,12 @@ hr{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+/*
+.about-col-2 .sub-title span{
+    color: #921313;
+}
+
 
 /*column with picture in*/
 .about-col-1{
@@ -385,6 +415,11 @@ hr{
     padding-top: 150px;
 }
 
+/*
+#services .container .sub-title span{
+    color: #921313;
+}
+
 /*Create grid for the services display*/
 .services-list{
     display: grid;
@@ -444,8 +479,14 @@ hr{
 /*seperating title from the my services section*/
 #portfolio{
     padding: 50px 0;
-    padding-top: 125px;
+    padding-top: 150px;
 }
+
+/*
+#portfolio .container .sub-title span{
+    color: #921313;
+}
+
 
 /* create grid*/ 
 .work-list{
@@ -557,6 +598,12 @@ the transition line came later and gives the rising effect of the info section*/
 #contact .sub-title{
     padding-bottom: 25px;
 }
+
+/*
+#contact .container .title .sub-title span{
+    color: #921313;
+}
+
 /*make left side only take up 35% of width of the form*/
 .contact-left{
     padding-left: 25px;
@@ -721,7 +768,7 @@ form input, form textarea{
 
 
 form btn2{
-    padding: 14px 60px;
+    padding-top:0px;
     font-size: 18px;
     margin-top: 0px;
     cursor: pointer;
