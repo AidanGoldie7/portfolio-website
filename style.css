@@ -469,6 +469,12 @@ hr{
     display: inline-block;
 }
 
+/*learn more line*/
+.services-list div a i {
+font-size: 25px;
+}
+
+
 /*when mouse hovers over a block*/
 .services-list div:hover{
     background: #921313;
@@ -842,36 +848,78 @@ nav .fa-solid{
         margin-bottom: 5px;
     }
 
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 48% }
+    }
+
+
+
+    /*NAV BAR*/
+    nav {
+        
+        z-index: 9999 !important;
+        position: fixed;
+        padding-left: 0px;
+        right: 0px;
+        background-color: #000000;
+    }
+
+    /*AIDAN Title*/ 
+    nav a{
+        padding-left: 10px;
+        font-size: 50px;
+    }
+
+    /*burger icon*/
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        padding-right: 25px;
     }
 
     /*add side nav bar for smaller screens*/
     nav ul{
-        background: #921313;
+        background: #181818;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
-        height: 120vh;
+        width: 33.3333%;
+        height: 50vh;
+        right: 0px;
+        top: 10px;
         padding-top: 50px;
+        padding-right: 100px;
         z-index: 9999;
         transition: right 0.5s;
+        border-radius: 16px;
+        
     }
 
     /*side nav bar organised*/
     nav ul li{
         display: block;
         margin: 25px;
+
     }
 
+    /*x mark*/
     nav ul .fa-solid{
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 12.5px;
+        right: 2.5px;
         cursor: pointer;
     }
+
+    nav hr{
+        width: 00px;
+    }
+
+    .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 9999 !important;
+  }
 
 
     /*ABOUT ME SECTION*/
