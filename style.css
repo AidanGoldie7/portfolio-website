@@ -849,32 +849,36 @@ nav .fa-solid{
         margin-bottom: 5px;
     }
 
-    /* The typing effect */
+
+    /* The typing effect ---------*/
     @keyframes typing {
         from { width: 0 }
-        to { width: 60% }
+        to { width: 80% }
     }
 
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    40% { border-color: rgba(255, 255, 255, 0); }
-  }
-/*Typewriter effect------*/
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        40% { border-color: rgba(255, 255, 255,0); }
+    }
+    /*Typewriter effect------*/
+
 
     /*NAV BAR*/
     nav {
         
         z-index: 9999 !important;
         position: fixed;
+        top: 0;
         padding-left: 0px;
         right: 0px;
-        background-color: #be2f2f;
+        background-color: #000000;
        
     }
 
     /*AIDAN Title*/ 
     nav a{
+        padding-top: 10px;
         font-size: 50px;
     }
 
@@ -882,7 +886,8 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
-        padding-right: 100px;
+        padding-right: 25px;
+        padding-top: 10px;
     }
 
     /*add side nav bar for smaller screens*/
