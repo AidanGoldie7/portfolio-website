@@ -863,12 +863,12 @@ nav .fa-solid{
         position: fixed;
         padding-left: 0px;
         right: 0px;
-        background-color: #000000;
+        background-color: #be2f2f;
+       
     }
 
     /*AIDAN Title*/ 
     nav a{
-        padding-left: 10px;
         font-size: 50px;
     }
 
@@ -876,7 +876,7 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
-        padding-right: 25px;
+        padding-right: 100px;
     }
 
     /*add side nav bar for smaller screens*/
