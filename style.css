@@ -999,3 +999,197 @@ hr{
 
 
 
+
+
+
+/*TABLET DEVICES*/
+@media only screen and (min-width:450px) and (max-width: 1000px){
+
+    /*NAV BAR*/
+    nav {
+        
+        z-index: 9999 !important;
+        position: fixed;
+        top: 0;
+        padding-left: 0px;
+        right: 0px;
+        background-color: #000000;
+       
+    }
+
+
+
+    /*AIDAN Title*/ 
+    nav a{
+        padding-top: 10px;
+        font-size: 75px;
+    }
+
+    /*burger icon*/
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        padding-right: 75px;
+        padding-top: 10px;
+    }
+
+    /*add side nav bar for smaller screens*/
+    nav ul{
+        
+        background: #181818;
+        position: fixed;
+        top: 0;
+        width: 33.3333%;
+        height: 50hv;
+        right: 0px;
+        top: 10px;
+        padding-top: 50px;
+        padding-right: 50px;
+        z-index: 9999;
+        transition: right 0.5s;
+        border-radius: 16px;
+        
+        
+    }
+
+    /*side nav bar organised*/
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+
+    /*x mark*/
+    nav ul .fa-solid{
+        position: absolute;
+        top: 12.5px;
+        right: 2.5px;
+        cursor: pointer;
+    }
+
+    nav hr{
+        width: 00px;
+    }
+
+    .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 9999 !important;
+  }
+
+
+  #header{
+    background-image: url(images/backgroundipad.PNG);
+    
+    }
+    .header-text{
+        margin-top: 40%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 75px;
+        padding-top: -250px;
+    }
+
+        /* The typing effect ---------*/
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 80% }
+        }
+    
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            40% { border-color: rgba(255, 255, 255,0); }
+        }
+        /*Typewriter effect------*/
+
+            /*ABOUT ME SECTION*/
+    #about {
+        padding-top: 100px;
+    }
+
+        /*set new font size*/
+        .about-col-2{
+            font-size: 14px;
+        }
+
+        .sub-title{
+            font-size: 50px;
+        }
+
+        #services{
+            padding-top: 85px;
+        }
+
+        #portfolio {
+            padding-top: 85px;
+            padding-bottom: -300px;
+        }
+
+        .contact-left .social-icons a{
+            font-size: 25px;
+        }
+}
+
+
+
+
+
+
+@media only screen and (min-width:1000px) and (max-width: 1410px){
+
+
+    /*AIDAN Title*/ 
+    nav a{
+        padding-top: 10px;
+        padding-left: 50px;
+        font-size: 50px;
+    }
+
+/*Nav bar item text design*/
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+    align-items: center;
+    margin-left: -100px;
+    margin-top: 10px;
+    z-index: 9999 !important;
+}
+
+.header-text{
+    margin-top: 25%;
+    font-size: 16px;
+}
+
+.header-text h1 {
+    font-size: 75px;
+    padding-top: -250px;
+}
+
+    /* The typing effect ---------*/
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 80% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        40% { border-color: rgba(255, 255, 255,0); }
+    }
+    /*Typewriter effect------*/
+
+
+
+    #contact {
+        padding-top: 75px;
+    }
+}
+
+
+
