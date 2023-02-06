@@ -1141,12 +1141,30 @@ hr{
 @media only screen and (min-width:1000px) and (max-width: 1410px){
 
 
+        /*NAV BAR*/
+        nav {
+        
+            z-index: 9999 !important;
+            position: fixed;
+            top: 0;
+            padding-left: 0px;
+            right: 0px;
+            background-color: #000000;
+           
+        }
+        
     /*AIDAN Title*/ 
     nav a{
         padding-top: 10px;
         padding-left: 50px;
         font-size: 50px;
     }
+
+    .sticky {
+        position: sticky;
+        top: 0;
+        z-index: 9999 !important;
+      }
 
 /*Nav bar item text design*/
 nav ul li a{
