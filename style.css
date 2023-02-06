@@ -245,7 +245,6 @@ hr{
 /*=======================================*/
 /* its a # when referencing a div id and a . when referencing a div class*/
 #about{
-    
     color: #ababab;
     padding-top: 150px;
 }
@@ -834,10 +833,11 @@ nav .fa-solid{
     display: none;
 }
 
-
+/*MOBILE DEVICES*/
 @media only screen and (max-width: 450px){
     #header{
         background-image: url(images/phonebackground.PNG);
+        padding-bottom: -50px;
     }
     .header-text{
         margin-top: 100%;
@@ -863,6 +863,14 @@ nav .fa-solid{
     }
     /*Typewriter effect------*/
 
+/*line in main text*/
+hr{
+    margin-top: 10px;
+    width: 81%;
+    font-style: italic;
+    margin-bottom: 10px;
+    opacity: 20%;
+}
 
     /*NAV BAR*/
     nav {
@@ -934,6 +942,9 @@ nav .fa-solid{
 
 
     /*ABOUT ME SECTION*/
+    #about {
+        padding-top: 0px;
+    }
     .sub-title{
         font-size: 40px;
     }
@@ -958,6 +969,17 @@ nav .fa-solid{
         font-size: 16px;
         margin-right: 20px;
     }
+
+    #services{
+        padding-top: 50px;
+    }
+    #portfolio {
+        padding-top: 50px;
+        padding-bottom: -300px;
+    }
+#contact {
+    padding-top: 0px;
+}
 
 
     /*fix contact me section spacing*/
