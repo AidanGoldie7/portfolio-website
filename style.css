@@ -53,7 +53,7 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     position: fixed;
-    background-color: #00000000;
+    background-color: #000000;
 
     width: 100%;
     margin-top: -10px;
@@ -835,7 +835,7 @@ nav .fa-solid{
 }
 
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 450px){
     #header{
         background-image: url(images/phonebackground.PNG);
     }
