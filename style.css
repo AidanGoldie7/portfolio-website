@@ -171,7 +171,7 @@ nav ul li a:hover::after{
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    40% { border-color: rgba(255, 255, 255, 0); }
+    40% { border-color: rgba(255, 255, 255); }
   }
 /*Typewriter effect------*/
 
@@ -833,6 +833,7 @@ nav .fa-solid{
     display: none;
 }
 
+
 /*MOBILE DEVICES*/
 @media only screen and (max-width: 450px){
     #header{
@@ -884,6 +885,10 @@ hr{
        
     }
 
+    #sidemenu {
+
+    }
+
     /*AIDAN Title*/ 
     nav a{
         padding-top: 10px;
@@ -900,11 +905,12 @@ hr{
 
     /*add side nav bar for smaller screens*/
     nav ul{
+        
         background: #181818;
         position: fixed;
         top: 0;
         width: 33.3333%;
-        height: 50vh;
+        height: 50hv;
         right: 0px;
         top: 10px;
         padding-top: 50px;
@@ -912,6 +918,7 @@ hr{
         z-index: 9999;
         transition: right 0.5s;
         border-radius: 16px;
+        
         
     }
 
