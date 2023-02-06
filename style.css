@@ -53,7 +53,8 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     position: fixed;
-    background-color: #000000;
+    background-color: #00000000;
+
     width: 100%;
     margin-top: -10px;
     margin-left: -150px;
@@ -170,7 +171,7 @@ nav ul li a:hover::after{
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    40% { border-color: rgb(255, 255, 255); }
+    40% { border-color: rgba(255, 255, 255, 0); }
   }
 /*Typewriter effect------*/
 
@@ -834,7 +835,7 @@ nav .fa-solid{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 425px){
     #header{
         background-image: url(images/phonebackground.PNG);
     }
@@ -851,10 +852,15 @@ nav .fa-solid{
     /* The typing effect */
     @keyframes typing {
         from { width: 0 }
-        to { width: 50% }
+        to { width: 60% }
     }
 
-
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    40% { border-color: rgba(255, 255, 255, 0); }
+  }
+/*Typewriter effect------*/
 
     /*NAV BAR*/
     nav {
